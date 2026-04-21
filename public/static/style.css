@@ -82,13 +82,12 @@ body {
 }
 
 .hero {
-    min-height: calc(100vh - 80px);
+    min-height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 2rem;
     background-color: var(--bg-secondary);
 }
 
@@ -103,6 +102,13 @@ body {
 }
 
 .content {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#works {
+    background-color: var(--bg-secondary);
     padding: 4rem 2rem;
     max-width: 1200px;
     margin: 0 auto;
@@ -203,7 +209,4 @@ body {
         padding: 2rem 1rem;
     }
 
-    .hero {
-        padding: 1rem;
-    }
 }
