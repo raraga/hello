@@ -1,0 +1,7 @@
+{
+  "name": "hello",
+  "compatibility_date": "2026-04-20",
+  "assets": {
+    "directory": "public"
+  }
+}
