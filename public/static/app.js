@@ -26,13 +26,26 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
+        contactForm.addEventListener('submit', async (e) => {
             e.preventDefault();
             const formData = new FormData(contactForm);
-            const data = Object.fromEntries(formData);
-            console.log('Form submitted:', data);
-            alert('Message sent!');
-            contactForm.reset();
+
+            try {
+                const response = await fetch('/api/contact', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                if (response.ok) {
+                    alert('Message sent!');
+                    contactForm.reset();
+                } else {
+                    alert('Failed to send message. Please try again.');
+                }
+            } catch (err) {
+                console.error('Error:', err);
+                alert('Failed to send message. Please try again.');
+            }
         });
     }
 });
