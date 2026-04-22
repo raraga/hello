@@ -1,0 +1,23 @@
+{
+  "name": "hello",
+  "version": "1.0.0",
+  "description": "Araga Development",
+  "homepage": "https://github.com/raraga/hello#readme",
+  "bugs": {
+    "url": "https://github.com/raraga/hello/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raraga/hello.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "wrangler": "^4.84.1"
+  }
+}

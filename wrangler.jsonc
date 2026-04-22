@@ -1,7 +1,14 @@
 {
-  "name": "hello",
-  "compatibility_date": "2026-04-20",
-  "assets": {
-    "directory": "public"
-  }
+	"name": "hello",
+	"compatibility_date": "2026-04-20",
+	"assets": {
+		"directory": "public"
+	},
+	"d1_databases": [
+		{
+			"binding": "araga_db",
+			"database_name": "araga_db",
+			"database_id": "d9f07535-949b-4172-aeea-4b07a58e37c8"
+		}
+	]
 }
